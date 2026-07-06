@@ -1080,19 +1080,7 @@
 
   background: var(--gold) !important;
 
-  color: #111111 !important;
-
-  display: grid !important;
-
-  place-items: center !important;
-
-  font-size: 24px !important;
-
-  line-height: 1 !important;
-
-  text-indent: 3px !important;
-
-padding-top: 3px !important;
+  display: block !important;
 
   box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important;
 
@@ -1100,7 +1088,49 @@ padding-top: 3px !important;
 
   pointer-events: none !important;
 
-  text-shadow: none !important;
+}
+
+.look-video .video-play::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 22px;
+
+  top: 18px;
+
+  width: 0;
+
+  height: 0;
+
+  border-top: 11px solid transparent;
+
+  border-bottom: 11px solid transparent;
+
+  border-left: 17px solid #111111;
+
+}
+
+.look-video .video-play::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 22px;
+
+  top: 18px;
+
+  width: 0;
+
+  height: 0;
+
+  border-top: 11px solid transparent;
+
+  border-bottom: 11px solid transparent;
+
+  border-left: 17px solid #111111;
 
 }
 
@@ -1284,7 +1314,7 @@ padding-top: 3px !important;
 
       <img src="https://img.youtube.com/vi/Ho2sQtOs7_Q/hqdefault.jpg" alt="BOOTS — Peaceful Easy Feeling">
 
-      <span class="video-play">▶</span>
+      <span class="video-play" aria-hidden="true"></span>
 
       <strong>PEACEFUL EASY FEELING</strong>
 
@@ -1294,7 +1324,7 @@ padding-top: 3px !important;
 
       <img src="https://img.youtube.com/vi/K_0Wku2h2Nw/hqdefault.jpg" alt="BOOTS — Wish You Were Here">
 
-      <span class="video-play">▶</span>
+     <span class="video-play" aria-hidden="true"></span>
 
       <strong>WISH YOU WERE HERE</strong>
 
@@ -1304,7 +1334,7 @@ padding-top: 3px !important;
 
       <img src="https://img.youtube.com/vi/NDngKOQaOFg/hqdefault.jpg" alt="BOOTS — I Wan'na Be Like You">
 
-      <span class="video-play">▶</span>
+   <span class="video-play" aria-hidden="true"></span>
 
       <strong>I WAN'NA BE LIKE YOU</strong>
 
@@ -1314,7 +1344,8 @@ padding-top: 3px !important;
 
       <img src="https://img.youtube.com/vi/_DArxuGIT_g/hqdefault.jpg" alt="BOOTS live at Nürnberg Stadium">
 
-      <span class="video-play">▶</span>
+     <span class="video-play" aria-hidden="true"></span>
+
 
       <strong>LIVE AT NÜRNBERG STADIUM</strong>
 
