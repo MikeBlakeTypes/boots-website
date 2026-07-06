@@ -542,42 +542,102 @@
     }
 
     .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
-      gap: 12px;
-      max-width: 1240px;
-      margin: 0 auto;
-      width: 100%;
-    }
 
-    .gallery-tile {
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      background: #12100C;
-      border: 1px solid rgba(195,162,92,0.2);
-      cursor: pointer;
-      padding: 0;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.7s ease, opacity 0.7s ease;
-    }
+  display: grid;
 
-    .gallery-tile:hover {
-      border-color: rgba(195,162,92,0.78);
-      box-shadow: 0 18px 44px rgba(0,0,0,0.34), 0 0 0 1px rgba(195,162,92,0.08);
-    }
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
-    .gallery-tile img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(1);
-      transition: transform 0.75s ease, filter 0.75s ease;
-    }
+  gap: 12px;
 
-    .gallery-tile:hover img {
-      transform: scale(1.035);
-      filter: grayscale(1) contrast(1.06);
-    }
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  width: 100%;
+
+  align-items: start;
+
+}
+
+.gallery-tile {
+
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #12100C;
+
+  border: 1px solid rgba(195,162,92,0.2);
+
+  cursor: pointer;
+
+  padding: 0;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  border-radius: 0;
+
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.7s ease, opacity 0.7s ease;
+
+}
+
+.gallery-tile::before {
+
+  content: "";
+
+  display: block;
+
+  width: 100%;
+
+  padding-top: 75%;
+
+}
+
+.gallery-tile:hover {
+
+  border-color: rgba(195,162,92,0.78);
+
+  box-shadow: 0 18px 44px rgba(0,0,0,0.34), 0 0 0 1px rgba(195,162,92,0.08);
+
+}
+
+.gallery-tile img {
+
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: grayscale(1);
+
+  transition: transform 0.75s ease, filter 0.75s ease;
+
+  -webkit-transform: translateZ(0);
+
+  transform: translateZ(0);
+
+}
+
+.gallery-tile:hover img {
+
+  transform: translateZ(0) scale(1.035);
+
+  filter: grayscale(1) contrast(1.06);
+
+}
 
     .side-row {
       display: flex;
@@ -707,6 +767,30 @@
     }
 
     .field textarea { resize: vertical; }
+
+    .field input {
+
+  height: 52px;
+
+  min-height: 52px;
+
+}
+
+.field input[type="date"] {
+
+  height: 52px;
+
+  min-height: 52px;
+
+  padding-top: 0;
+
+  padding-bottom: 0;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+}
 
     .submit-row {
       grid-column: 1 / -1;
@@ -1011,7 +1095,7 @@
 
     <div class="video-grid">
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/NDngKOQaOFg?rel=0" title="BOOTS — Peaceful Easy Feeling" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ho2sQtOs7_Q?rel=0" title="BOOTS — Peaceful Easy Feeling" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <span>PEACEFUL EASY FEELING</span>
       </div>
 
@@ -1024,7 +1108,7 @@
       </div>
 
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Ho2sQtOs7_Q?rel=0" title="BOOTS — I Wan'na Be Like You" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/NDngKOQaOFg?rel=0" title="BOOTS — I Wan'na Be Like You" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <span>I WAN'NA BE LIKE YOU</span>
       </div>
 
