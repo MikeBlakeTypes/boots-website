@@ -982,97 +982,107 @@
     .lb-prev { left: 10px; }
     .lb-next { right: 10px; }
 
-   @media (min-width: 761px) and (max-width: 1200px) {
+   
 
-  #look {
+.look-grid {
 
-    display: block;
+  display: grid;
 
-  }
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  #look .kicker {
+  gap: 28px;
 
-    margin-bottom: 56px;
+  max-width: 900px;
 
-  }
+  margin: 0 auto;
 
-  .video-grid {
+  width: 100%;
 
-    display: flex !important;
+}
 
-    flex-wrap: wrap;
+.look-tile {
 
-    gap: 44px 28px;
+  position: relative;
 
-    max-width: 900px;
+  display: block;
 
-    margin: 0 auto 72px !important;
+  width: 100%;
 
-    width: 100%;
+  border: 1px solid rgba(195,162,92,0.25);
 
-  }
+  background: #0E0D0B;
 
-  .video-card {
+  overflow: hidden;
 
-    flex: 0 0 calc(50% - 14px);
+  padding: 0;
 
-    display: flex !important;
+}
 
-    flex-direction: column;
+.look-tile img {
 
-    gap: 16px;
+  display: block;
 
-    min-height: auto !important;
+  width: 100%;
 
-  }
+  aspect-ratio: 16 / 9;
 
-  .video-link-frame {
+  object-fit: cover;
 
-    display: block;
+  filter: grayscale(1);
 
-    width: 100%;
+}
 
-    height: auto !important;
+.look-video {
 
-    aspect-ratio: 16 / 9;
+  text-decoration: none;
 
-  }
+  margin-bottom: 36px;
 
-  .video-card span {
+}
 
-    display: block;
+.look-video strong {
 
-    min-height: 44px;
+  display: block;
 
-    margin: 0;
+  padding: 18px 8px 0;
 
-    padding: 0;
+  font-family: var(--display);
 
-    background: transparent;
+  font-weight: 500;
 
-    line-height: 1.3;
+  font-size: 17px;
 
-  }
+  letter-spacing: 0.18em;
 
-  #galleryGrid {
+  color: var(--cream);
 
-    display: flex !important;
+  text-align: center;
 
-    flex-wrap: wrap;
+}
 
-    gap: 16px;
+.look-video .video-play {
 
-    max-width: 900px;
+  position: absolute;
 
-    margin: 0 auto !important;
+  top: 38%;
 
-    clear: both;
+  left: 50%;
 
-  }
+  transform: translate(-50%, -50%);
 
-  .gallery-tile {
+  color: var(--gold);
 
-    flex: 0 0 calc(50% - 8px);
+  font-size: 38px;
+
+  text-shadow: 0 6px 20px rgba(0,0,0,0.85);
+
+}
+
+@media (max-width: 760px) {
+
+  .look-grid {
+
+    grid-template-columns: 1fr;
 
   }
 
@@ -1231,84 +1241,80 @@
   </section>
 
   <section id="look" class="section look-gallery">
-    <div class="kicker"><div class="hair"></div><span>LOOK</span><div class="hair"></div></div>
 
-    <div class="video-grid">
+  <div class="kicker"><div class="hair"></div><span>LOOK</span><div class="hair"></div></div>
 
-  <div class="video-card video-card-link">
+  <div class="look-grid">
 
-    <a class="video-link-frame" href="https://www.youtube.com/watch?v=Ho2sQtOs7_Q" target="_blank" rel="noopener">
+    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=Ho2sQtOs7_Q" target="_blank" rel="noopener">
 
       <img src="https://img.youtube.com/vi/Ho2sQtOs7_Q/hqdefault.jpg" alt="BOOTS — Peaceful Easy Feeling">
 
       <span class="video-play">▶</span>
 
+      <strong>PEACEFUL EASY FEELING</strong>
+
     </a>
 
-    <span>PEACEFUL EASY FEELING</span>
-
-  </div>
-
-  <div class="video-card video-card-link">
-
-    <a class="video-link-frame" href="https://www.youtube.com/watch?v=K_0Wku2h2Nw" target="_blank" rel="noopener">
+    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=K_0Wku2h2Nw" target="_blank" rel="noopener">
 
       <img src="https://img.youtube.com/vi/K_0Wku2h2Nw/hqdefault.jpg" alt="BOOTS — Wish You Were Here">
 
       <span class="video-play">▶</span>
 
+      <strong>WISH YOU WERE HERE</strong>
+
     </a>
 
-    <span>WISH YOU WERE HERE</span>
-
-  </div>
-
-  <div class="video-card video-card-link">
-
-    <a class="video-link-frame" href="https://www.youtube.com/watch?v=NDngKOQaOFg" target="_blank" rel="noopener">
+    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=NDngKOQaOFg" target="_blank" rel="noopener">
 
       <img src="https://img.youtube.com/vi/NDngKOQaOFg/hqdefault.jpg" alt="BOOTS — I Wan'na Be Like You">
 
       <span class="video-play">▶</span>
 
+      <strong>I WAN'NA BE LIKE YOU</strong>
+
     </a>
 
-    <span>I WAN'NA BE LIKE YOU</span>
-
-  </div>
-
-  <div class="video-card video-card-link">
-
-    <a class="video-link-frame" href="https://www.youtube.com/watch?v=_DArxuGIT_g" target="_blank" rel="noopener">
+    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=_DArxuGIT_g" target="_blank" rel="noopener">
 
       <img src="https://img.youtube.com/vi/_DArxuGIT_g/hqdefault.jpg" alt="BOOTS live at Nürnberg Stadium">
 
       <span class="video-play">▶</span>
 
+      <strong>LIVE AT NÜRNBERG STADIUM</strong>
+
     </a>
 
-    <span>LIVE AT N&Uuml;RNBERG STADIUM &mdash; 50,000 PEOPLE</span>
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_2c41f46cc5b340298e2a311b35689344.jpg" alt="BOOTS on stage in smoke and backlight" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_14273918f813469ebb2ea9c548a58ddd.jpeg" alt="Mike and Jason against a graffiti wall" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_436468a407b747968a2dd3eff8114d2e.jpeg" alt="Mike at the studio microphone" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_29447bb978384348867bba7d0928ecea.jpeg" alt="BOOTS playing acoustic guitars" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f7effcf02afb44f88e5a7c556d2f368a.jpg" alt="BOOTS on an open-air stage at night" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_3f2cc73225de41c3a0c065c7c2f78043.jpg" alt="BOOTS live on a festival stage" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_270049ab12364c7d83610d8ff28a3972.jpeg" alt="Mike and Jason in a tunnel" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f78dde5b04d9497f872761cc418f5824.jpeg" alt="BOOTS live on stage" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_c9aca67a776c48eb9131694b61c8ae3b.jpeg" alt="Jason singing in the studio" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_5d15ff2210f448cab325dcfcd90e6066.jpeg" alt="Jason with electric guitar" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_e01c61747dc441818cd591bf0a2fcaa5.jpeg" alt="Mike and Jason recording with headphones" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_0d0189dba84e437aa4d3b95d3da94d6a.jpeg" alt="Mike and Jason at the microphone" loading="lazy"></button>
+
+    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_42b70da42a584cfc8314b8079c469330.jpeg" alt="Mike and Jason in the studio, laughing" loading="lazy"></button>
 
   </div>
 
-</div>
-
-    <div class="gallery-grid" id="galleryGrid">
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_2c41f46cc5b340298e2a311b35689344.jpg" alt="BOOTS on stage in smoke and backlight" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_14273918f813469ebb2ea9c548a58ddd.jpeg" alt="Mike and Jason against a graffiti wall" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_436468a407b747968a2dd3eff8114d2e.jpeg" alt="Mike at the studio microphone" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_29447bb978384348867bba7d0928ecea.jpeg" alt="BOOTS playing acoustic guitars" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f7effcf02afb44f88e5a7c556d2f368a.jpg" alt="BOOTS on an open-air stage at night" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_3f2cc73225de41c3a0c065c7c2f78043.jpg" alt="BOOTS live on a festival stage" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_270049ab12364c7d83610d8ff28a3972.jpeg" alt="Mike and Jason in a tunnel" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f78dde5b04d9497f872761cc418f5824.jpeg" alt="BOOTS live on stage" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_c9aca67a776c48eb9131694b61c8ae3b.jpeg" alt="Jason singing in the studio" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_5d15ff2210f448cab325dcfcd90e6066.jpeg" alt="Jason with electric guitar" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_e01c61747dc441818cd591bf0a2fcaa5.jpeg" alt="Mike and Jason recording with headphones" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_0d0189dba84e437aa4d3b95d3da94d6a.jpeg" alt="Mike and Jason at the microphone" loading="lazy"></button>
-      <button class="gallery-tile"><img src="https://static.wixstatic.com/media/05114b_42b70da42a584cfc8314b8079c469330.jpeg" alt="Mike and Jason in the studio, laughing" loading="lazy"></button>
-    </div>
-  </section>
+</section>
 
   <section class="section section--slim">
     <div class="kicker"><div class="hair"></div><span>SIDE PROJECTS</span><div class="hair"></div></div>
