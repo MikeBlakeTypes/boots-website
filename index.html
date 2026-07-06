@@ -1062,47 +1062,51 @@
 
 .look-video .video-play {
 
-  position: absolute;
+  position: absolute !important;
 
-  top: 43%;
+  inset: auto !important;
 
-  left: 50%;
+  top: 43% !important;
 
-  transform: translate(-50%, -50%);
+  left: 50% !important;
 
-  width: 58px;
+  transform: translate(-50%, -50%) !important;
 
-  height: 58px;
+  width: 58px !important;
 
-  border-radius: 50%;
+  height: 58px !important;
 
-  background: var(--gold);
+  border-radius: 50% !important;
 
-  color: #111111;
+  background: var(--gold) !important;
 
-  display: grid;
+  color: #111111 !important;
 
-  place-items: center;
+  display: grid !important;
 
-  font-size: 24px;
+  place-items: center !important;
 
-  line-height: 1;
+  font-size: 24px !important;
 
-  text-indent: 3px;
+  line-height: 1 !important;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  text-indent: 3px !important;
 
-  opacity: 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important;
 
-  transition: transform .2s ease, background-color .2s ease;
+  opacity: 1 !important;
+
+  pointer-events: none !important;
+
+  text-shadow: none !important;
 
 }
 
 .look-video:hover .video-play {
 
-  transform: translate(-50%, -50%) scale(1.08);
+  transform: translate(-50%, -50%) scale(1.08) !important;
 
-  background: #d7b36a;
+  background: #d7b36a !important;
 
 }
 
