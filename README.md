@@ -1,5 +1,14 @@
 # BOOTS — Live Music Duo · Website
 
+## Version 2.4 — Post Launch Update
+
+- Replaced the upcoming-release placeholder with the released single **Stick Season**.
+- Added current Spotify, Apple Music track and single, Amazon Music, YouTube Music and Deezer links.
+- Added a clear invitation above the Stick Season streaming links.
+- Changed Liquid Applause from an external donation link to a non-functional **Coming Soon** preview.
+- Refined the booking enquiry email subject and message for a concise, professional introduction.
+- Retained the existing Facebook, Instagram and YouTube links; no TikTok link is included.
+
 One-page band website for **BOOTS** (Mike & Jason, British live-music duo, ~200 gigs/year across Europe). Redesign of the old Wix site at bootsmusic.net. Primary goal: **booking enquiries** from event planners, hotels, wedding couples and venues.
 
 This folder is the complete, deploy-ready static site. No build step, no framework, no dependencies.
@@ -53,7 +62,7 @@ Steps for the implementing coder:
 
 ## Open TODOs (marked with `TODO` comments in index.html)
 
-1. **Donation link** — LIQUID APPLAUSE tile points at buymeacoffee.com generically. The band needs to create a Buy Me a Coffee (or PayPal.me) account; swap in the real URL.
+1. **Liquid Applause** — currently presented as a non-functional “Coming Soon” tile. Connect it only when the planned tipping system is ready.
 2. **Gallery images are hotlinked from Wix** (`static.wixstatic.com`). Download them into `images/gallery/` and update the `src`s **before the old Wix site is cancelled**, or they will vanish.
 3. **Enquiry form** currently opens the visitor's mail app (`mailto:bootsmusic@live.com`). Recommended upgrade: a free form service (Web3Forms or Formspree) so it submits directly from the page — replace the submit handler with their endpoint POST.
 4. **German version** — the EN/DE toggle is design-only. The old site has full German copy at bootsmusic.net (`/home-c18e7`, `/ueber-uns`) to translate from. Simplest approach: `de/index.html` duplicate; better: content file per language.

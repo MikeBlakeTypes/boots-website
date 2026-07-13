@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -235,6 +235,25 @@
 
     .strip-tile:hover { background: #12100B; }
 
+    .strip-tile--disabled {
+      cursor: default;
+    }
+
+    .strip-tile--disabled:hover { background: var(--bg); }
+
+    .strip-tile--disabled:hover .pill {
+      background: transparent;
+      border-color: var(--gold-60);
+    }
+
+    .strip-status {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      color: var(--gold);
+    }
+
     .pill {
       display: inline-block;
       border: 1px solid var(--gold-60);
@@ -431,6 +450,15 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+    }
+
+    .platform-heading {
+      margin: 2px 0 -8px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--cream-dim);
     }
 
     .platform {
@@ -1207,11 +1235,12 @@
         <p>Live videos and photos from the road.</p>
       </a>
 
-      <a href="https://www.buymeacoffee.com" target="_blank" rel="noopener" class="strip-tile">
+      <div class="strip-tile strip-tile--disabled" aria-label="Liquid Applause — coming soon">
         <svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#C3A25C" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M12 10 H32 L30 40 H14 Z"/><path d="M32 15 H37 C39.5 15 40.5 17 40 19.5 L38.5 26 C38 28.5 36.5 29.5 34 29.5 H31"/><path d="M13.2 19 C18 21.5 26 21.5 31.4 19"/></svg>
         <span class="pill">LIQUID&nbsp;APPLAUSE</span>
-        <p>Buy the band a beer &mdash; the classiest way to say encore.</p>
-      </a>
+        <span class="strip-status">COMING SOON</span>
+        <p>A new way to show your appreciation is on its way.</p>
+      </div>
     </div>
   </section>
 
@@ -1241,11 +1270,21 @@
     <div class="kicker"><div class="hair"></div><span>LISTEN</span><div class="hair"></div></div>
     <div class="release-grid">
 
-      <div class="coming-soon">
-        <svg width="40" height="40" viewBox="0 0 46 46" fill="none" stroke="#C3A25C" stroke-width="1.4" aria-hidden="true"><circle cx="23" cy="23" r="16" stroke-dasharray="3 5"/><circle cx="23" cy="23" r="5.5"/></svg>
-        <span class="release-type">COMING SOON</span>
-        <h3 class="release-title">NEW RELEASE</h3>
-        <p>The next BOOTS record is in the works &mdash; watch this space.</p>
+      <div class="release-card">
+        <div class="release-head">
+          <span class="release-type">SINGLE</span>
+          <h3 class="release-title">STICK SEASON</h3>
+        </div>
+        <iframe src="https://open.spotify.com/embed/album/59DHuWbJD1SV2UDB48qGYv?theme=0" title="Stick Season — Spotify player" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <p class="platform-heading">Listen on your favourite platform</p>
+        <div class="platforms">
+          <a class="platform" href="https://open.spotify.com/album/59DHuWbJD1SV2UDB48qGYv?si=jXubclZ9Qsy0q09Il0VoIw" target="_blank" rel="noopener">SPOTIFY</a>
+          <a class="platform" href="https://music.apple.com/at/album/stick-season/6789440573?i=6789440574&amp;l=en-GB" target="_blank" rel="noopener">APPLE MUSIC &mdash; TRACK</a>
+          <a class="platform" href="https://music.apple.com/at/album/stick-season-single/6789440573?l=en-GB" target="_blank" rel="noopener">APPLE MUSIC &mdash; SINGLE</a>
+          <a class="platform" href="https://music.amazon.com/tracks/B0H8BLJKBV" target="_blank" rel="noopener">AMAZON MUSIC</a>
+          <a class="platform" href="https://music.youtube.com/watch?v=a3Y2vp-eJWk&amp;si=OF9mPcKX3cZTxrWT" target="_blank" rel="noopener">YOUTUBE MUSIC</a>
+          <a class="platform" href="https://link.deezer.com/s/33OI77RlocUjJgRathJOO" target="_blank" rel="noopener">DEEZER</a>
+        </div>
       </div>
 
       <div class="release-card">
@@ -1552,13 +1591,23 @@
       e.preventDefault();
 
       var f = e.target.elements;
-      var subject = 'Booking enquiry — ' + (f.venue.value || 'event');
+      var eventDate = f.eventdate.value
+        ? new Date(f.eventdate.value + 'T00:00:00').toLocaleDateString('en-GB', {
+            day: 'numeric', month: 'long', year: 'numeric'
+          })
+        : 'To be confirmed';
+      var venue = f.venue.value.trim() || 'To be confirmed';
+      var subject = 'BOOTS booking enquiry — ' +
+        (f.venue.value.trim() || (f.eventdate.value ? eventDate : 'Event'));
 
       var body =
-        'Name: ' + f.fullname.value +
-        '\\nEvent date: ' + f.eventdate.value +
-        '\\nVenue: ' + f.venue.value +
-        '\\n\\n' + f.message.value;
+        'Hello Mike and Jason,' +
+        '\n\nI would like to enquire about booking BOOTS.' +
+        '\n\nEvent date: ' + eventDate +
+        '\nVenue / location: ' + venue +
+        '\n\n' + f.message.value.trim() +
+        '\n\nBest regards,' +
+        '\n' + f.fullname.value.trim();
 
       window.location.href =
         'mailto:bootsmusic@live.com?subject=' +
