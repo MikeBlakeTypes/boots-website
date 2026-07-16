@@ -89,10 +89,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (banner) banner.hidden = false;
   }
 
-  function hideBanner() {
-    var banner = document.getElementById('consentBanner');
-    if (banner) banner.hidden = true;
+function hideBanner() {
+  alert('HIDE BANNER RUNNING');
+  var banner = document.getElementById('consentBanner');
+  if (banner) {
+    alert('BANNER FOUND');
+    banner.hidden = true;
+  } else {
+    alert('BANNER NOT FOUND');
   }
+}
 
   function openPreferences(trigger) {
     returnFocusTo = trigger || document.activeElement;
