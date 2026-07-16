@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function savePreferences(preferences) {
-  alert('SAVE STARTED');
     currentPreferences = {
       essential: true,
       media: preferences.media === true,
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(currentPreferences));
     catch (_error) {
-  alert('LOCAL STORAGE ERROR: ' + _error.message);
+  // The selection still applies during this page view if storage is unavailable.
 }
     hideBanner();
     closePreferences();
@@ -90,13 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 function hideBanner() {
-  alert('HIDE BANNER RUNNING');
   var banner = document.getElementById('consentBanner');
   if (banner) {
-    alert('BANNER FOUND');
     banner.hidden = true;
-  } else {
-    alert('BANNER NOT FOUND');
   }
 }
 
@@ -141,12 +136,9 @@ function hideBanner() {
   }
 
   function handleAction(button) {
-  alert('BOOT CONSENT CLICKED: ' + button.dataset.consent);
-
   var action = button.dataset.consent;
     if (action === 'accept') savePreferences({ media: true });
-    if (action === 'reject') {
-  alert('REJECT PATH ENTERED');
+if (action === 'reject') {
   savePreferences({ media: false });
 }
     if (action === 'preferences') openPreferences(button);
