@@ -1,21 +1,29 @@
 # BOOTS — Live Music Duo · Website
 
-## Version 2.4 — Post Launch Update
+## Version 2.5 — Further Post Launch Updates
 
-- Replaced the upcoming-release placeholder with the released single **Stick Season**.
-- Added current Spotify, Apple Music track and single, Amazon Music, YouTube Music and Deezer links.
-- Added a clear invitation above the Stick Season streaming links.
-- Changed Liquid Applause from an external donation link to a non-functional **Coming Soon** preview.
-- Refined the booking enquiry email subject and message for a concise, professional introduction.
-- Retained the existing Facebook, Instagram and YouTube links; no TikTok link is included.
+- Enlarged both **Side Projects** cards.
+- Added a restrained antique-gold **B** favicon.
+- Added a German-first bilingual **Datenschutz / Privacy Policy** and cookie preferences.
+- Blocked Spotify embeds until the visitor allows optional embedded media; the preference is retained locally for up to six months.
+- Reframed the ninth gallery image so Jason's face remains visible in the thumbnail crop.
+- Updated the preview wording for **Stick Season**, **Rich Girl** and **It's Not Television**.
+- Kept only the direct Apple Music track link for **Stick Season** and added its YouTube link.
+- Corrected the Rich Girl YouTube, YouTube Music and Amazon Music links and labels.
+- Removed Tidal from **It's Not Television**.
+- Added the requested blank line between event date and venue/location in the enquiry email.
+- Left **Liquid Applause** inactive and unchanged. Stripe, yodelling trousers and old-laptop performance work remain outside v2.5.
 
 One-page band website for **BOOTS** (Mike & Jason, British live-music duo, ~200 gigs/year across Europe). Redesign of the old Wix site at bootsmusic.net. Primary goal: **booking enquiries** from event planners, hotels, wedding couples and venues.
 
 This folder is the complete, deploy-ready static site. No build step, no framework, no dependencies.
 
 ```
-handoff/
+Boots Website v2.5/
 ├── index.html              # the entire site (HTML + CSS + vanilla JS in one file)
+├── privacy.html            # German-first bilingual privacy policy
+├── consent.js              # optional embedded-media consent controls
+├── favicon.svg             # antique-gold B favicon
 ├── images/
 │   └── duo-portrait.png    # hero + about photo (1448×1086)
 └── README.md               # this file
@@ -69,8 +77,8 @@ Steps for the implementing coder:
 5. **Video titles** — matched to YouTube IDs by their order on the old site's video page; confirm each label matches its video. A fifth untitled video exists on the old site (`mQoOYD5HG9Y`) if wanted.
 6. **Spotify artist link** — the footer Spotify icon points at the album page; swap for the artist profile URL if the band has one.
 7. **Instagram feed** (optional) — the band wants latest posts from `@bootsmusicofficial` on the site. Instagram has no free official embed for this; use a widget service (Behold, LightWidget, SnapWidget) — connect the account, get the embed snippet, style it to match (B&W thumbnails, gold hairline borders) and place it under GALLERY.
-8. **Favicon + og:image** — add a favicon (gold BOOTS mark on black) and a proper share image.
-9. **Image optimization** — `duo-portrait.png` is ~2 MB; convert to WebP/AVIF (~200 KB) for faster mobile loads.
+8. **Share image** — add a dedicated social-media share image; the favicon was completed in v2.5.
+9. **Image optimization** — `duo-portrait.png` is ~2 MB; convert to WebP/AVIF (~200 KB) for faster mobile loads. This was deliberately deferred from v2.5.
 
 ## Facts (do not invent beyond these)
 
