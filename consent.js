@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(currentPreferences));
-    } catch (_error) {
-      // The selection still applies during this page view if storage is unavailable.
-    }
+    catch (_error) {
+  alert('LOCAL STORAGE ERROR: ' + _error.message);
+}
     hideBanner();
     closePreferences();
     updateSpotifyPlayers();
