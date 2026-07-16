@@ -139,7 +139,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var action = button.dataset.consent;
     if (action === 'accept') savePreferences({ media: true });
-    if (action === 'reject') savePreferences({ media: false });
+    if (action === 'reject') {
+  alert('REJECT PATH ENTERED');
+  savePreferences({ media: false });
+}
     if (action === 'preferences') openPreferences(button);
     if (action === 'save') savePreferences({ media: document.getElementById('mediaConsent').checked });
   }
