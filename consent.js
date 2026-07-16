@@ -142,18 +142,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   createInterface();
-  document.querySelectorAll('[data-consent]').forEach(function (button) {
-    button.addEventListener('click', function () { handleAction(button); });
-  });
-  document.querySelectorAll('[data-open-consent]').forEach(function (button) {
-    button.addEventListener('click', function () { openPreferences(button); });
-  });
-  document.querySelectorAll('[data-consent-close]').forEach(function (button) {
-    button.addEventListener('click', closePreferences);
-  });
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') closePreferences();
-  });
+
+document.addEventListener('click', function (event) {
+  var button = event.target.closest('[data-consent]');
+  if (button) {
+    handleAction(button);
+    return;
+  }
+
+  var openButton = event.target.closest('[data-open-consent]');
+  if (openButton) {
+    openPreferences(openButton);
+    return;
+  }
+
+  var closeButton = event.target.closest('[data-consent-close]');
+  if (closeButton) {
+    closePreferences();
+  }
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') closePreferences();
+});
 
   window.BootsConsent = {
     allows: allows,
