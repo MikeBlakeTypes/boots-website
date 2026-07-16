@@ -144,19 +144,25 @@ document.addEventListener('DOMContentLoaded', function () {
   createInterface();
 
 document.addEventListener('click', function (event) {
-  var button = event.target.closest('[data-consent]');
+  var target = event.target;
+
+  if (!target || typeof target.closest !== 'function') {
+    return;
+  }
+
+  var button = target.closest('[data-consent]');
   if (button) {
     handleAction(button);
     return;
   }
 
-  var openButton = event.target.closest('[data-open-consent]');
+  var openButton = target.closest('[data-open-consent]');
   if (openButton) {
     openPreferences(openButton);
     return;
   }
 
-  var closeButton = event.target.closest('[data-consent-close]');
+var closeButton = target.closest('[data-consent-close]');
   if (closeButton) {
     closePreferences();
   }
