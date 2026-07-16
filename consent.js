@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function savePreferences(preferences) {
+  alert('SAVE STARTED');
     currentPreferences = {
       essential: true,
       media: preferences.media === true,
