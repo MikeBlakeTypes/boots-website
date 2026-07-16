@@ -1,4 +1,4 @@
-(function initialisePrivacyChoices() {
+document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
   var STORAGE_KEY = 'bootsConsentV1';
@@ -165,4 +165,4 @@
   updateSpotifyPlayers();
   if (currentPreferences) hideBanner();
   else showBanner();
-})();
+});
