@@ -134,7 +134,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function handleAction(button) {
-    var action = button.dataset.consent;
+  alert('BOOT CONSENT CLICKED: ' + button.dataset.consent);
+
+  var action = button.dataset.consent;
     if (action === 'accept') savePreferences({ media: true });
     if (action === 'reject') savePreferences({ media: false });
     if (action === 'preferences') openPreferences(button);
