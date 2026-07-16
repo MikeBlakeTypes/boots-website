@@ -1,11 +1,12 @@
 # BOOTS — Live Music Duo · Website
 
-## Version 2.5 — Further Post Launch Updates
+## Version 2.5.4 — Cookie Consent Removed Production Restore
 
 - Enlarged both **Side Projects** cards.
 - Added a restrained antique-gold **B** favicon.
-- Added a German-first bilingual **Datenschutz / Privacy Policy** and cookie preferences.
-- Blocked Spotify embeds until the visitor allows optional embedded media; the preference is retained locally for up to six months.
+- Kept the German-first bilingual **Datenschutz / Privacy Policy**.
+- Removed the temporary cookie-consent banner, preferences controls and consent script.
+- Restored direct loading for the three Spotify embeds.
 - Reframed the ninth gallery image so Jason's face remains visible in the thumbnail crop.
 - Updated the preview wording for **Stick Season**, **Rich Girl** and **It's Not Television**.
 - Kept only the direct Apple Music track link for **Stick Season** and added its YouTube link.
@@ -19,10 +20,9 @@ One-page band website for **BOOTS** (Mike & Jason, British live-music duo, ~200 
 This folder is the complete, deploy-ready static site. No build step, no framework, no dependencies.
 
 ```
-Boots Website v2.5/
+Boots Website v2.5.4/
 ├── index.html              # the entire site (HTML + CSS + vanilla JS in one file)
 ├── privacy.html            # German-first bilingual privacy policy
-├── consent.js              # optional embedded-media consent controls
 ├── favicon.svg             # antique-gold B favicon
 ├── images/
 │   └── duo-portrait.png    # hero + about photo (1448×1086)
