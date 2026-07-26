@@ -1,6 +1,6 @@
 # BOOTS — Live Music Duo · Website
 
-## Version 2.5.4 — Cookie Consent Removed Production Restore
+## Version 2.6.5 — Liquid Applause Click Analytics
 
 - Enlarged both **Side Projects** cards.
 - Added a restrained antique-gold **B** favicon.
@@ -13,16 +13,22 @@
 - Corrected the Rich Girl YouTube, YouTube Music and Amazon Music links and labels.
 - Removed Tidal from **It's Not Television**.
 - Added the requested blank line between event date and venue/location in the enquiry email.
-- Left **Liquid Applause** inactive and unchanged. Stripe, yodelling trousers and old-laptop performance work remain outside v2.5.
+- Connected **Liquid Applause** to Stripe through a first-party Cloudflare Pages Function.
+- Added a privacy-conscious aggregate daily click counter using the bound `BOOTS_ANALYTICS` Cloudflare D1 database.
+- Added a fail-safe redirect so visitors still reach Stripe if the counter is temporarily unavailable.
+- Updated the bilingual privacy policy for Stripe, aggregate click counting and Cloudflare Pages hosting.
 
 One-page band website for **BOOTS** (Mike & Jason, British live-music duo, ~200 gigs/year across Europe). Redesign of the old Wix site at bootsmusic.net. Primary goal: **booking enquiries** from event planners, hotels, wedding couples and venues.
 
 This folder is the complete, deploy-ready static site. No build step, no framework, no dependencies.
 
 ```
-Boots Website v2.5.4/
+Boots Website v2.6.5/
 ├── index.html              # the entire site (HTML + CSS + vanilla JS in one file)
 ├── privacy.html            # German-first bilingual privacy policy
+├── functions/
+│   └── liquid-applause/
+│       └── go.js           # aggregate click counter + Stripe redirect
 ├── favicon.svg             # antique-gold B favicon
 ├── images/
 │   └── duo-portrait.png    # hero + about photo (1448×1086)
@@ -70,7 +76,7 @@ Steps for the implementing coder:
 
 ## Open TODOs (marked with `TODO` comments in index.html)
 
-1. **Liquid Applause** — currently presented as a non-functional “Coming Soon” tile. Connect it only when the planned tipping system is ready.
+1. **Liquid Applause analytics** — active through `/liquid-applause/go`; requires the production D1 binding `BOOTS_ANALYTICS` to the `boots-analytics` database.
 2. **Gallery images are hotlinked from Wix** (`static.wixstatic.com`). Download them into `images/gallery/` and update the `src`s **before the old Wix site is cancelled**, or they will vanish.
 3. **Enquiry form** currently opens the visitor's mail app (`mailto:bootsmusic@live.com`). Recommended upgrade: a free form service (Web3Forms or Formspree) so it submits directly from the page — replace the submit handler with their endpoint POST.
 4. **German version** — the EN/DE toggle is design-only. The old site has full German copy at bootsmusic.net (`/home-c18e7`, `/ueber-uns`) to translate from. Simplest approach: `de/index.html` duplicate; better: content file per language.
