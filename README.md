@@ -1,7 +1,11 @@
 # BOOTS — Live Music Duo · Website
 
-## Version 2.6.5 — Liquid Applause Click Analytics
+## Version 2.6.6 — BOOTS Favicon Branding Update
 
+
+- Added the approved BOOTS black-and-antique-gold favicon set from Brand Asset Pack v1.0.
+- Added a dedicated 180×180 Apple touch icon so Safari Favourites and iPhone/iPad Home Screen bookmarks can use the official BOOTS artwork instead of a generated letter tile.
+- Added ICO, SVG and PNG favicon references to both the main website and privacy page for broad browser support.
 - Enlarged both **Side Projects** cards.
 - Added a restrained antique-gold **B** favicon.
 - Kept the German-first bilingual **Datenschutz / Privacy Policy**.
@@ -23,13 +27,20 @@ One-page band website for **BOOTS** (Mike & Jason, British live-music duo, ~200 
 This folder is the complete, deploy-ready static site. No build step, no framework, no dependencies.
 
 ```
-Boots Website v2.6.5/
+BOOTS Website v2.6.6/
 ├── index.html              # the entire site (HTML + CSS + vanilla JS in one file)
 ├── privacy.html            # German-first bilingual privacy policy
 ├── functions/
 │   └── liquid-applause/
 │       └── go.js           # aggregate click counter + Stripe redirect
-├── favicon.svg             # antique-gold B favicon
+├── favicon.ico             # conventional browser favicon
+├── favicon.svg             # scalable antique-gold B favicon
+├── favicon-16x16.png       # small browser favicon
+├── favicon-32x32.png       # standard browser favicon
+├── favicon-48x48.png       # larger browser favicon
+├── favicon-192x192.png     # web-app icon
+├── favicon-512x512.png     # high-resolution web-app icon
+├── apple-touch-icon.png    # Safari/iPhone/iPad icon (180×180)
 ├── images/
 │   └── duo-portrait.png    # hero + about photo (1448×1086)
 └── README.md               # this file
