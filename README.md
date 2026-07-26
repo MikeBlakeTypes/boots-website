@@ -40,3 +40,5 @@ This package replaces the temporary BOOTS-branded YouTube placeholder thumbnails
 - live-at-nurnberg-stadium.jpg
 
 All four thumbnails remain first-party local assets under `images/video-thumbnails/`. No YouTube embed is restored; clicking still takes the visitor out deliberately to YouTube.
+
+- Refined the local YouTube cards so titles sit in a lower black strip and the BOOTS gold-circle/black-triangle play treatment is restored.
