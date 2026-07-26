@@ -19,10 +19,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
-
   <style>
     :root {
       --bg: #0A0A0A;
@@ -575,6 +571,22 @@
       text-shadow: 0 6px 20px rgba(0,0,0,0.85);
       pointer-events: none;
     }
+
+    .external-listen-panel {
+      min-height: 152px;
+      display: grid;
+      place-content: center;
+      gap: 8px;
+      padding: 28px;
+      text-align: center;
+      border: 1px solid rgba(195,162,92,.28);
+      background: linear-gradient(135deg,#15120d,#090909);
+    }
+    .external-listen-panel span { font-family: var(--display); color: var(--gold); letter-spacing: .18em; font-size: 22px; }
+    .external-listen-panel p { margin: 0; color: var(--cream-dim); font-family: var(--sans); font-size: 12px; letter-spacing: .05em; }
+    .look-video--local { min-height: 260px; display:flex; align-items:center; justify-content:center; background:linear-gradient(145deg,#18140d,#080808); }
+    .look-video--local::before { content:"▶"; color:var(--gold); font-size:46px; line-height:1; opacity:.92; }
+    .look-video--local strong { position:absolute; left:18px; right:18px; bottom:18px; z-index:2; }
 
     .gallery-grid {
 
@@ -1320,7 +1332,7 @@
           <span class="release-type">SINGLE</span>
           <h3 class="release-title">STICK SEASON</h3>
         </div>
-        <iframe src="https://open.spotify.com/embed/album/59DHuWbJD1SV2UDB48qGYv?theme=0" title="Stick Season — Spotify player" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="external-listen-panel" aria-label="External listening links"><span>LISTEN EXTERNALLY</span><p>Choose your preferred music service below.</p></div>
         <p class="platform-heading">This is a preview &mdash; listen to the full song on your favourite platform</p>
         <div class="platforms">
           <a class="platform" href="https://open.spotify.com/album/59DHuWbJD1SV2UDB48qGYv?si=jXubclZ9Qsy0q09Il0VoIw" target="_blank" rel="noopener">SPOTIFY</a>
@@ -1337,7 +1349,7 @@
           <span class="release-type">SINGLE</span>
           <h3 class="release-title">RICH GIRL</h3>
         </div>
-        <iframe src="https://open.spotify.com/embed/album/4IgJ7v3RiJxLUYWDXwX5Uw?theme=0" title="Rich Girl — Spotify player" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="external-listen-panel" aria-label="External listening links"><span>LISTEN EXTERNALLY</span><p>Choose your preferred music service below.</p></div>
         <p class="platform-heading">This is a preview &mdash; listen to the full song on your favourite platform</p>
         <div class="platforms">
           <a class="platform" href="https://open.spotify.com/album/4IgJ7v3RiJxLUYWDXwX5Uw" target="_blank" rel="noopener">SPOTIFY</a>
@@ -1354,7 +1366,7 @@
           <span class="release-type">ALBUM</span>
           <h3 class="release-title">IT'S NOT TELEVISION</h3>
         </div>
-        <iframe src="https://open.spotify.com/embed/album/4Xch04SrUzIRqvlnxTjxQN?theme=0" title="It's Not Television — Spotify player" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="external-listen-panel" aria-label="External listening links"><span>LISTEN EXTERNALLY</span><p>Choose your preferred music service below.</p></div>
         <p class="platform-heading">This is a preview &mdash; listen to the full album on your favourite platform</p>
         <div class="platforms">
           <a class="platform" href="https://open.spotify.com/album/4Xch04SrUzIRqvlnxTjxQN" target="_blank" rel="noopener">SPOTIFY</a>
@@ -1374,72 +1386,64 @@
 
   <div class="look-grid">
 
-    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=Ho2sQtOs7_Q" target="_blank" rel="noopener">
+    <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=Ho2sQtOs7_Q" target="_blank" rel="noopener">
 
-      <img src="https://img.youtube.com/vi/Ho2sQtOs7_Q/hqdefault.jpg" alt="BOOTS — Peaceful Easy Feeling">
-
-      <span class="video-play" aria-hidden="true"></span>
+      <span class="video-card-placeholder" aria-hidden="true"></span>
 
       <strong>PEACEFUL EASY FEELING</strong>
 
     </a>
 
-    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=K_0Wku2h2Nw" target="_blank" rel="noopener">
+    <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=K_0Wku2h2Nw" target="_blank" rel="noopener">
 
-      <img src="https://img.youtube.com/vi/K_0Wku2h2Nw/hqdefault.jpg" alt="BOOTS — Wish You Were Here">
-
-     <span class="video-play" aria-hidden="true"></span>
+      <span class="video-card-placeholder" aria-hidden="true"></span>
 
       <strong>WISH YOU WERE HERE</strong>
 
     </a>
 
-    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=NDngKOQaOFg" target="_blank" rel="noopener">
+    <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=NDngKOQaOFg" target="_blank" rel="noopener">
 
-      <img src="https://img.youtube.com/vi/NDngKOQaOFg/hqdefault.jpg" alt="BOOTS — I Wan'na Be Like You">
-
-   <span class="video-play" aria-hidden="true"></span>
+      <span class="video-card-placeholder" aria-hidden="true"></span>
 
       <strong>I WAN'NA BE LIKE YOU</strong>
 
     </a>
 
-    <a class="look-tile look-video" href="https://www.youtube.com/watch?v=_DArxuGIT_g" target="_blank" rel="noopener">
+    <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=_DArxuGIT_g" target="_blank" rel="noopener">
 
-      <img src="https://img.youtube.com/vi/_DArxuGIT_g/hqdefault.jpg" alt="BOOTS live at Nürnberg Stadium">
-
-     <span class="video-play" aria-hidden="true"></span>
+      <span class="video-card-placeholder" aria-hidden="true"></span>
 
 
       <strong>LIVE AT NÜRNBERG STADIUM</strong>
 
     </a>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_2c41f46cc5b340298e2a311b35689344.jpg" alt="BOOTS on stage in smoke and backlight" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_2c41f46cc5b340298e2a311b35689344.jpg" alt="BOOTS on stage in smoke and backlight" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_14273918f813469ebb2ea9c548a58ddd.jpeg" alt="Mike and Jason against a graffiti wall" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_14273918f813469ebb2ea9c548a58ddd.jpeg" alt="Mike and Jason against a graffiti wall" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_436468a407b747968a2dd3eff8114d2e.jpeg" alt="Mike at the studio microphone" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_436468a407b747968a2dd3eff8114d2e.jpeg" alt="Mike at the studio microphone" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_29447bb978384348867bba7d0928ecea.jpeg" alt="BOOTS playing acoustic guitars" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_29447bb978384348867bba7d0928ecea.jpeg" alt="BOOTS playing acoustic guitars" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f7effcf02afb44f88e5a7c556d2f368a.jpg" alt="BOOTS on an open-air stage at night" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_f7effcf02afb44f88e5a7c556d2f368a.jpg" alt="BOOTS on an open-air stage at night" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_3f2cc73225de41c3a0c065c7c2f78043.jpg" alt="BOOTS live on a festival stage" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_3f2cc73225de41c3a0c065c7c2f78043.jpg" alt="BOOTS live on a festival stage" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_270049ab12364c7d83610d8ff28a3972.jpeg" alt="Mike and Jason in a tunnel" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_270049ab12364c7d83610d8ff28a3972.jpeg" alt="Mike and Jason in a tunnel" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_f78dde5b04d9497f872761cc418f5824.jpeg" alt="BOOTS live on stage" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_f78dde5b04d9497f872761cc418f5824.jpeg" alt="BOOTS live on stage" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img class="gallery-focus-top" src="https://static.wixstatic.com/media/05114b_c9aca67a776c48eb9131694b61c8ae3b.jpeg" alt="Jason singing in the studio" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img class="gallery-focus-top" src="images/gallery/05114b_c9aca67a776c48eb9131694b61c8ae3b.jpeg" alt="Jason singing in the studio" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_5d15ff2210f448cab325dcfcd90e6066.jpeg" alt="Jason with electric guitar" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_5d15ff2210f448cab325dcfcd90e6066.jpeg" alt="Jason with electric guitar" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_e01c61747dc441818cd591bf0a2fcaa5.jpeg" alt="Mike and Jason recording with headphones" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_e01c61747dc441818cd591bf0a2fcaa5.jpeg" alt="Mike and Jason recording with headphones" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_0d0189dba84e437aa4d3b95d3da94d6a.jpeg" alt="Mike and Jason at the microphone" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_0d0189dba84e437aa4d3b95d3da94d6a.jpeg" alt="Mike and Jason at the microphone" loading="lazy"></button>
 
-    <button class="look-tile gallery-tile"><img src="https://static.wixstatic.com/media/05114b_42b70da42a584cfc8314b8079c469330.jpeg" alt="Mike and Jason in the studio, laughing" loading="lazy"></button>
+    <button class="look-tile gallery-tile"><img src="images/gallery/05114b_42b70da42a584cfc8314b8079c469330.jpeg" alt="Mike and Jason in the studio, laughing" loading="lazy"></button>
 
   </div>
 
@@ -1470,31 +1474,31 @@
       </a>
     </div>
 
-    <form class="enquiry" id="enquiryForm">
+    <div class="enquiry" id="enquiryForm">
       <div class="field">
         <label for="f-name">NAME</label>
-        <input id="f-name" name="fullname" type="text" required>
+        <input id="f-name" type="text" required>
       </div>
 
       <div class="field">
         <label for="f-date">EVENT DATE</label>
-        <input id="f-date" name="eventdate" type="date">
+        <input id="f-date" type="date">
       </div>
 
       <div class="field field--wide">
         <label for="f-venue">VENUE / LOCATION</label>
-        <input id="f-venue" name="venue" type="text">
+        <input id="f-venue" type="text">
       </div>
 
       <div class="field field--wide">
         <label for="f-message">MESSAGE</label>
-        <textarea id="f-message" name="message" rows="5" required></textarea>
+        <textarea id="f-message" rows="5" required></textarea>
       </div>
 
       <div class="submit-row">
-        <button type="submit" class="submit">SEND ENQUIRY</button>
+        <button type="button" class="submit" id="sendEnquiry">SEND ENQUIRY</button>
       </div>
-    </form>
+    </div>
   </section>
 
   <footer class="footer">
@@ -1547,7 +1551,7 @@
 
     <span class="copyright">&copy; 2026 BOOTS. All rights reserved.</span>
     <div class="footer-legal">
-      <a href="privacy.html" class="privacy">DATENSCHUTZ / PRIVACY</a>
+      <a href="privacy.html" class="privacy">PRIVACY &amp; COOKIES / DATENSCHUTZ</a>
     </div>
   </footer>
 
@@ -1635,33 +1639,20 @@
       });
     })();
 
-    document.getElementById('enquiryForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var f = e.target.elements;
-      var eventDate = f.eventdate.value
-        ? new Date(f.eventdate.value + 'T00:00:00').toLocaleDateString('en-GB', {
-            day: 'numeric', month: 'long', year: 'numeric'
-          })
-        : 'To be confirmed';
-      var venue = f.venue.value.trim() || 'To be confirmed';
-      var subject = 'BOOTS booking enquiry — ' +
-        (f.venue.value.trim() || (f.eventdate.value ? eventDate : 'Event'));
-
-      var body =
-        'Hello Mike and Jason,' +
-        '\n\nI would like to enquire about booking BOOTS.' +
-        '\n\nEvent date: ' + eventDate +
-        '\n\nVenue / location: ' + venue +
-        '\n\n' + f.message.value.trim() +
-        '\n\nBest regards,' +
-        '\n' + f.fullname.value.trim();
-
-      window.location.href =
-        'mailto:bootsmusic@live.com?subject=' +
-        encodeURIComponent(subject) +
-        '&body=' +
-        encodeURIComponent(body);
+    document.getElementById('sendEnquiry').addEventListener('click', function () {
+      var name = document.getElementById('f-name');
+      var date = document.getElementById('f-date');
+      var venueField = document.getElementById('f-venue');
+      var message = document.getElementById('f-message');
+      if (!name.value.trim() || !message.value.trim()) {
+        if (!name.value.trim()) name.focus(); else message.focus();
+        return;
+      }
+      var eventDate = date.value ? new Date(date.value + 'T00:00:00').toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : 'To be confirmed';
+      var venue = venueField.value.trim() || 'To be confirmed';
+      var subject = 'BOOTS booking enquiry — ' + (venueField.value.trim() || (date.value ? eventDate : 'Event'));
+      var body = 'Hello Mike and Jason,' + '\n\nI would like to enquire about booking BOOTS.' + '\n\nEvent date: ' + eventDate + '\n\nVenue / location: ' + venue + '\n\n' + message.value.trim() + '\n\nBest regards,' + '\n' + name.value.trim();
+      window.location.href = 'mailto:bootsmusic@live.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
   </script>
 </body>
