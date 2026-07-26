@@ -26,3 +26,5 @@ Before deliberate visitor interaction, the page loads only first-party site file
 - `images/duo-portrait.png` — hero/about image
 - `images/gallery/` — 13 local gallery images
 - favicon and Apple touch icon files
+
+- Corrected the v2.6.7 preview so all four YouTube cards display locally stored first-party thumbnail images.

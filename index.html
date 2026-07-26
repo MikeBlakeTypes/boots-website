@@ -1240,6 +1240,29 @@
       }
     }
 
+  
+    .video-card-thumbnail {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      z-index: 0;
+    }
+    .look-video--local::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.04) 42%, rgba(0,0,0,.50) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .look-video--local strong {
+      position: relative;
+      z-index: 2;
+    }
+
   </style>
 </head>
 
@@ -1388,7 +1411,7 @@
 
     <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=Ho2sQtOs7_Q" target="_blank" rel="noopener">
 
-      <span class="video-card-placeholder" aria-hidden="true"></span>
+      <img class="video-card-thumbnail" src="images/video-thumbnails/peaceful-easy-feeling.jpg" alt="" loading="lazy" decoding="async">
 
       <strong>PEACEFUL EASY FEELING</strong>
 
@@ -1396,7 +1419,7 @@
 
     <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=K_0Wku2h2Nw" target="_blank" rel="noopener">
 
-      <span class="video-card-placeholder" aria-hidden="true"></span>
+      <img class="video-card-thumbnail" src="images/video-thumbnails/wish-you-were-here.jpg" alt="" loading="lazy" decoding="async">
 
       <strong>WISH YOU WERE HERE</strong>
 
@@ -1404,7 +1427,7 @@
 
     <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=NDngKOQaOFg" target="_blank" rel="noopener">
 
-      <span class="video-card-placeholder" aria-hidden="true"></span>
+      <img class="video-card-thumbnail" src="images/video-thumbnails/i-wanna-be-like-you.jpg" alt="" loading="lazy" decoding="async">
 
       <strong>I WAN'NA BE LIKE YOU</strong>
 
@@ -1412,7 +1435,7 @@
 
     <a class="look-tile look-video look-video--local" href="https://www.youtube.com/watch?v=_DArxuGIT_g" target="_blank" rel="noopener">
 
-      <span class="video-card-placeholder" aria-hidden="true"></span>
+      <img class="video-card-thumbnail" src="images/video-thumbnails/live-at-nurnberg-stadium.jpg" alt="" loading="lazy" decoding="async">
 
 
       <strong>LIVE AT NÜRNBERG STADIUM</strong>
