@@ -28,3 +28,15 @@ Before deliberate visitor interaction, the page loads only first-party site file
 - favicon and Apple touch icon files
 
 - Corrected the v2.6.7 preview so all four YouTube cards display locally stored first-party thumbnail images.
+
+
+## v2.6.7 screenshot thumbnail correction
+
+This package replaces the temporary BOOTS-branded YouTube placeholder thumbnails with four genuine local screenshots supplied by the user:
+
+- peaceful-easy-feeling.jpg
+- wish-you-were-here.jpg
+- i-wanna-be-like-you.jpg
+- live-at-nurnberg-stadium.jpg
+
+All four thumbnails remain first-party local assets under `images/video-thumbnails/`. No YouTube embed is restored; clicking still takes the visitor out deliberately to YouTube.
