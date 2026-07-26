@@ -1196,6 +1196,29 @@
       }
     }
 
+    /* v2.5.5: narrow portrait-phone hero framing correction only. */
+    @media (max-width: 600px) and (orientation: portrait) {
+      .hero-media {
+        height: 54vh;
+        height: 54svh;
+        min-height: 360px;
+        max-height: 520px;
+      }
+
+      .hero-media img {
+        object-position: 50% 0%;
+      }
+
+      .hero-title {
+        margin-top: -88px;
+        padding-bottom: 22px;
+      }
+
+      .hero-title h1 {
+        font-size: clamp(44px, 16vw, 68px);
+      }
+    }
+
   </style>
 </head>
 
