@@ -1,6 +1,6 @@
 # BOOTS — Live Music Duo Website
 
-## Version 2.6.7 — Minimal Privacy Release
+## Version 2.6.8 — Listen Artwork Update
 
 - Cloudflare Pages is the sole production host; GitHub remains the source repository.
 - Removed all embedded Spotify players and retained ordinary external listening links.
@@ -42,3 +42,11 @@ This package replaces the temporary BOOTS-branded YouTube placeholder thumbnails
 All four thumbnails remain first-party local assets under `images/video-thumbnails/`. No YouTube embed is restored; clicking still takes the visitor out deliberately to YouTube.
 
 - Refined the local YouTube cards so titles sit in a lower black strip and the BOOTS gold-circle/black-triangle play treatment is restored.
+
+
+## Version 2.6.8 changes
+
+- Replaced the three text-only Listen placeholders with square, first-party local artwork panels.
+- Added the supplied square artwork for Stick Season, Rich Girl and It's Not Television.
+- Changed the explanatory line beneath each release to: “Listen in full on your favourite platforms”.
+- Preserved external-link-only listening, the v2.6.7 privacy architecture, YouTube thumbnail treatment, Liquid Applause click counting, favicon branding and Cloudflare Pages hosting.
