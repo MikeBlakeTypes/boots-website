@@ -1,5 +1,16 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.0-yodel-test.1 — Experimental Yodelling Lederhosen Feature
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Added the original-proportion BOOTS Yodelling Lederhosen beside Liquid Applause as an independent tap/click interaction.
+- Added deliberate-user-action audio playback using the supplied processed recording; no autoplay and no overlapping audio.
+- Added a short vibration animation and a subtle idle sway every 15 seconds.
+- Added keyboard access, an accessible control label and `prefers-reduced-motion` support.
+- Kept Liquid Applause behaviour and aggregate click counting unchanged.
+- Added reusable, independently positioned PNG/SVG/audio assets under `assets/yodelling-lederhosen/`.
+
 ## Version 2.6.9 — Release and Side-Project Click Analytics
 
 - Added privacy-conscious aggregate daily click counting for every Stick Season listening-platform link: Spotify, Apple Music, Amazon Music, YouTube Music, YouTube and Deezer.
