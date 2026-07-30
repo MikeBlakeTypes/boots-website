@@ -1,5 +1,16 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.1-yodel-test.2 — Yodelling Lederhosen Layout Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Reduced the displayed Lederhosen cut-out and vibration marks by approximately 30% while preserving the source image's exact aspect ratio.
+- Moved the interactive Lederhosen upward so the top of the cut-out aligns with the top of the Liquid Applause beer mug icon on wide layouts.
+- Removed the internal gold divider so Liquid Applause and the Lederhosen read as one combined panel.
+- Improved responsive sizing and minimum column widths so the Liquid Applause button does not collide with panel dividers on narrower desktop windows.
+- Increased the subtle idle sway frequency from every 15 seconds to every 7.5 seconds.
+- Preserved the caption wording, type treatment, colour and size, and retained all click/tap, audio, vibration, keyboard and reduced-motion behaviour.
+
 ## Version 2.7.0-yodel-test.1 — Experimental Yodelling Lederhosen Feature
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
