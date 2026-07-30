@@ -1,5 +1,15 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.6.9 — Release and Side-Project Click Analytics
+
+- Added privacy-conscious aggregate daily click counting for every Stick Season listening-platform link: Spotify, Apple Music, Amazon Music, YouTube Music, YouTube and Deezer.
+- Added aggregate daily click counting for the Marveltonez and Jason Howell side-project buttons.
+- Reused the existing `boots-analytics` D1 database, `outbound_clicks` table and `BOOTS_ANALYTICS` production binding.
+- Added one allow-listed first-party Pages Function at `functions/track/[[path]].js`; unknown tracking routes return 404.
+- Preserved fail-safe redirects and excluded HEAD requests from counts.
+- Updated the bilingual privacy notice to describe the expanded but still non-identifying aggregate measurement.
+- Retained the existing Liquid Applause counter unchanged.
+
 ## Version 2.6.8 — Listen Artwork Update
 
 - Cloudflare Pages is the sole production host; GitHub remains the source repository.
