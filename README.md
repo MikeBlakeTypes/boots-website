@@ -1,5 +1,16 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.1-yodel-test.6 — Final Lederhosen Positioning Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Froze the approved v2.7.1-yodel-test.5 Lederhosen and vibration-graphic sizes globally across all viewports.
+- Preserved the approved iPhone trousers position.
+- Moved only the trousers and vibration group 20px left on tablet and desktop layouts so the trousers centreline aligns above the capital “L” in “Lederhosen”, while leaving the desktop caption in its existing position.
+- Removed the curved gold arrow element completely on all devices and removed its reserved caption spacing.
+- Centred “Tap the Lederhosen for a yodel!” on iPhone and equivalent narrow portrait layouts.
+- Preserved the approved production image, Liquid Applause copy, PROST! sign-off, audio, idle sway, vibration animation, keyboard accessibility and reduced-motion behaviour.
+
 ## Version 2.7.1-yodel-test.5 — Global Lederhosen Size and Liquid Applause Copy Refinement
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.

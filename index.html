@@ -1348,7 +1348,7 @@
     }
 
 
-    /* v2.7.1-yodel-test.5: global Lederhosen sizing and Liquid Applause copy refinement */
+    /* v2.7.1-yodel-test.6: frozen Lederhosen size and final positioning refinement */
     .liquid-yodel-tile {
       flex: 1.65 1 560px;
       min-width: min(100%, 560px);
@@ -1422,7 +1422,6 @@
     .yodel-caption-wrap {
       position: relative;
       margin-top: 8px;
-      padding-right: 44px;
       text-align: center;
     }
 
@@ -1434,14 +1433,6 @@
       font-style: italic;
       line-height: 1.2;
       transform: rotate(-2deg);
-    }
-
-    .yodel-arrow {
-      position: absolute;
-      right: 0;
-      top: -28px;
-      width: 48px;
-      height: auto;
     }
 
     .yodel-feature.is-yodelling .yodel-button { animation: yodel-vibrate 0.48s ease-in-out; }
@@ -1459,23 +1450,25 @@
     @keyframes yodel-marks { 0%,100% { opacity: 0; transform: scale(.88); } 25%,75% { opacity: 1; transform: scale(1); } }
     @keyframes yodel-sway { 0%,100% { transform: rotate(0deg); } 25% { transform: rotate(-1.8deg); } 70% { transform: rotate(1.5deg); } }
 
+    /* Test.6: keep the approved global size; move only the trousers/vibration group left on tablet and desktop. */
+    @media (min-width: 681px) {
+      .yodel-button {
+        position: relative;
+        left: -20px;
+      }
+    }
+
     @media (min-width: 681px) and (max-width: 1100px) {
       .liquid-yodel-tile {
         flex-basis: 100%;
         grid-template-columns: minmax(300px, 1fr) minmax(190px, 0.72fr);
       }
 
-      /* Test.5: media queries may adjust position and spacing only; scale stays global. */
       .yodel-button {
-        position: relative;
-        left: -20px;
         top: -22px;
       }
 
-
       .yodel-caption-wrap {
-        position: relative;
-        left: -20px;
         top: -22px;
       }
     }
@@ -1571,7 +1564,6 @@
           </button>
           <div class="yodel-caption-wrap" aria-hidden="true">
             <p class="yodel-caption">Tap the Lederhosen<br>for a yodel!</p>
-            <img class="yodel-arrow" src="assets/yodelling-lederhosen/arrow.svg" alt="">
           </div>
           <audio id="yodelAudio" preload="none">
             <source src="assets/yodelling-lederhosen/yodelling-trousers.ogg" type="audio/ogg">
