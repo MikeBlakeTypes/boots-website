@@ -1,5 +1,13 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.1-yodel-test.3 — Yodelling Lederhosen Production Asset Replacement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Replaced the existing Yodelling Lederhosen cut-out with the newly supplied transparent production PNG.
+- Regenerated the web-optimised PNG directly from the new master while preserving its transparency, proportions and appearance.
+- Kept all approved v2.7.1-yodel-test.2 positioning, sizing, spacing, caption, vibration graphics, arrow, animation timing, audio behaviour, accessibility and responsive layout unchanged.
+
 ## Version 2.7.1-yodel-test.2 — Yodelling Lederhosen Layout Refinement
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.

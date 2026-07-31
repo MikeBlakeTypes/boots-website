@@ -1,6 +1,6 @@
 # BOOTS Yodelling Lederhosen Production Assets
 
-Version: 1.0 (for BOOTS Website v2.7.0-yodel-test.1)
+Version: 1.1 (for BOOTS Website v2.7.1-yodel-test.3)
 
 ## Locked production rule
 
@@ -24,3 +24,9 @@ BOOTS gold: `#C3A25C`.
 ## Website implementation
 
 The live feature uses separate DOM elements rather than a flattened composite. The caption is editable HTML text for accessibility and responsive layout. The PNG, vibration SVGs and arrow SVG can therefore be moved and resized independently without altering the photograph.
+
+## v1.1 production asset update
+
+- `yodelling-lederhosen-cutout.png` is the newly supplied definitive transparent production master.
+- `yodelling-lederhosen-cutout-web.png` is regenerated directly from that master with identical dimensions and transparency.
+- Do not redraw, stretch, squash, crop or otherwise alter the master image.
