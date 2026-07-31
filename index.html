@@ -257,6 +257,16 @@
       color: var(--gold);
     }
 
+    .liquid-prost {
+      display: block;
+      margin-top: 14px;
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-align: center;
+    }
+
     .pill {
       display: inline-block;
       border: 1px solid var(--gold-60);
@@ -1338,7 +1348,7 @@
     }
 
 
-    /* v2.7.1-yodel-test.4: narrow-view Yodelling Lederhosen sizing and positioning refinement */
+    /* v2.7.1-yodel-test.5: global Lederhosen sizing and Liquid Applause copy refinement */
     .liquid-yodel-tile {
       flex: 1.65 1 560px;
       min-width: min(100%, 560px);
@@ -1379,7 +1389,7 @@
       color: inherit;
       cursor: pointer;
       position: relative;
-      width: min(168px, 46vw);
+      width: 84px;
       aspect-ratio: 1140 / 2047;
       display: block;
       transform-origin: 50% 12%;
@@ -1401,7 +1411,7 @@
     .yodel-vibration {
       position: absolute;
       top: 43%;
-      width: 38px;
+      width: 19px;
       height: auto;
       opacity: 0;
       pointer-events: none;
@@ -1455,17 +1465,13 @@
         grid-template-columns: minmax(300px, 1fr) minmax(190px, 0.72fr);
       }
 
-      /* Test.4: keep the approved source asset unchanged; adjust only rendered size and placement. */
+      /* Test.5: media queries may adjust position and spacing only; scale stays global. */
       .yodel-button {
-        width: 84px;
         position: relative;
         left: -20px;
         top: -22px;
       }
 
-      .yodel-vibration {
-        width: 19px;
-      }
 
       .yodel-caption-wrap {
         position: relative;
@@ -1489,7 +1495,6 @@
         padding-top: 24px;
       }
 
-      .yodel-button { width: min(168px, 44vw); }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1555,8 +1560,8 @@
         <a href="/liquid-applause/go" class="strip-tile" target="_blank" rel="noopener noreferrer" aria-label="Open the Liquid Applause payment page in a new tab">
           <svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#C3A25C" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M12 10 H32 L30 40 H14 Z"/><path d="M32 15 H37 C39.5 15 40.5 17 40 19.5 L38.5 26 C38 28.5 36.5 29.5 34 29.5 H31"/><path d="M13.2 19 C18 21.5 26 21.5 31.4 19"/></svg>
           <span class="pill">LIQUID&nbsp;APPLAUSE</span>
-          <span class="strip-status">PROST!</span>
-          <p>If we&rsquo;ve made you smile, buy Boots a beer.</p>
+          <p>If we&rsquo;ve made you smile, you&rsquo;re welcome to buy Boots a beer.</p>
+          <span class="strip-status liquid-prost">PROST!</span>
         </a>
         <div class="yodel-feature" id="yodelFeature">
           <button type="button" class="yodel-button" id="yodelButton" aria-label="Play the BOOTS Yodelling Lederhosen sound">

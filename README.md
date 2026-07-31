@@ -1,5 +1,16 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.1-yodel-test.5 — Global Lederhosen Size and Liquid Applause Copy Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Removed breakpoint-dependent Lederhosen sizing and made the 50%-reduced v2.7.1-yodel-test.3 rendered size the global default across desktop, tablet and mobile views.
+- Applied the proportionally reduced vibration-graphic size globally so no media query restores the earlier larger scale.
+- Retained responsive positioning and spacing rules while preventing them from changing the trousers or vibration scale.
+- Updated the Liquid Applause invitation to: “If we've made you smile, you're welcome to buy Boots a beer.”
+- Added a separate centred gold “PROST!” sign-off beneath the invitation with a small gap.
+- Preserved the approved transparent image asset, exact aspect ratio, caption, arrow, animation timing, audio, accessibility, reduced-motion support and Liquid Applause behaviour.
+
 ## Version 2.7.1-yodel-test.4 — Narrow-View Lederhosen Size and Position Refinement
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
