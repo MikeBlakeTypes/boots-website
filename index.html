@@ -1338,7 +1338,7 @@
     }
 
 
-    /* v2.7.1-yodel-test.3: replacement Yodelling Lederhosen production asset */
+    /* v2.7.1-yodel-test.4: narrow-view Yodelling Lederhosen sizing and positioning refinement */
     .liquid-yodel-tile {
       flex: 1.65 1 560px;
       min-width: min(100%, 560px);
@@ -1449,10 +1449,28 @@
     @keyframes yodel-marks { 0%,100% { opacity: 0; transform: scale(.88); } 25%,75% { opacity: 1; transform: scale(1); } }
     @keyframes yodel-sway { 0%,100% { transform: rotate(0deg); } 25% { transform: rotate(-1.8deg); } 70% { transform: rotate(1.5deg); } }
 
-    @media (max-width: 1100px) {
+    @media (min-width: 681px) and (max-width: 1100px) {
       .liquid-yodel-tile {
         flex-basis: 100%;
         grid-template-columns: minmax(300px, 1fr) minmax(190px, 0.72fr);
+      }
+
+      /* Test.4: keep the approved source asset unchanged; adjust only rendered size and placement. */
+      .yodel-button {
+        width: 84px;
+        position: relative;
+        left: -20px;
+        top: -22px;
+      }
+
+      .yodel-vibration {
+        width: 19px;
+      }
+
+      .yodel-caption-wrap {
+        position: relative;
+        left: -20px;
+        top: -22px;
       }
     }
 

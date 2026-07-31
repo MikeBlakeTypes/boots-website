@@ -1,5 +1,15 @@
 # BOOTS — Live Music Duo Website
 
+## Version 2.7.1-yodel-test.4 — Narrow-View Lederhosen Size and Position Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Reduced the rendered Yodelling Lederhosen to 50% of its v2.7.1-yodel-test.3 size in the narrow two-column layout only.
+- Reduced the separate vibration graphics proportionally.
+- Moved the complete interactive feature slightly upward and to the left at that breakpoint for better alignment with the LOOK and LIQUID APPLAUSE controls.
+- Kept the approved transparent production PNG, caption size and wording, audio, animation timing, accessibility, reduced-motion support and Liquid Applause behaviour unchanged.
+- Preserved the existing wide-desktop and single-column mobile layouts.
+
 ## Version 2.7.1-yodel-test.3 — Yodelling Lederhosen Production Asset Replacement
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
