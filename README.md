@@ -122,3 +122,11 @@ All four thumbnails remain first-party local assets under `images/video-thumbnai
 - Added the supplied square artwork for Stick Season, Rich Girl and It's Not Television.
 - Changed the explanatory line beneath each release to: “Listen in full on your favourite platforms”.
 - Preserved external-link-only listening, the v2.6.7 privacy architecture, YouTube thumbnail treatment, Liquid Applause click counting, favicon branding and Cloudflare Pages hosting.
+
+## BOOTS Website v2.7.2 — Yodelling Lederhosen production-sync update
+
+- Preserved the existing `feature/yodelling-lederhosen` implementation.
+- Updated the BOOTS YouTube channel link to `https://www.youtube.com/@bootsmusic`.
+- Changed the visible heading to `TIP JAR · TRINKGELD`.
+- Changed the supporting line to `Leave BOOTS a little Liquid Applause.`
+- Preserved the existing Stripe destination, aggregate click-counting route, yodel audio, animation, interaction, accessibility behaviour and responsive layout.
