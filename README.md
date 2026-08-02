@@ -130,3 +130,11 @@ All four thumbnails remain first-party local assets under `images/video-thumbnai
 - Changed the visible heading to `TIP JAR · TRINKGELD`.
 - Changed the supporting line to `Leave BOOTS a little Liquid Applause.`
 - Preserved the existing Stripe destination, aggregate click-counting route, yodel audio, animation, interaction, accessibility behaviour and responsive layout.
+
+## BOOTS Website v2.7.2 — Yodelling Lederhosen Final Positioning Refinement
+
+- Reduced the empty space beneath the Lederhosen caption so the gold divider sits higher.
+- Applied a modest spacing reduction on desktop and tablet.
+- Applied a stronger spacing reduction on mobile portrait.
+- On desktop only, moved the caption slightly left without moving or resizing the Lederhosen.
+- Preserved the approved trousers size, position, animation, audio, interaction, accessibility behaviour, Tip Jar wording, YouTube handle, Stripe route, click counter, site content and privacy behaviour.
