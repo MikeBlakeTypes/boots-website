@@ -1,6 +1,14 @@
 # BOOTS — Live Music Duo Website
 
-## Version 2.7.1-yodel-test.6 — Final Lederhosen Positioning Refinement
+## BOOTS Website v2.7.3 — Yodelling Lederhosen Further Positioning Refinements
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Raised the lower gold divider on desktop by reducing excess lower spacing in the combined LISTEN / LOOK / TIP JAR · TRINKGELD / Lederhosen area.
+- Shifted the complete lower Tip Jar and Lederhosen content grouping 24px left in the narrow two-column desktop/tablet layout, without changing the approved trousers size or assets.
+- Extended the click-triggered trousers vibration and vibration-mark animation from 0.48 seconds to 0.68 seconds, with the active state retained for 0.70 seconds.
+- Raised the lower divider on narrow portrait mobile layouts by reducing the Lederhosen panel minimum height and lower padding, approximately halving the gap beneath the yodel caption.
+- Preserved all approved wording, imagery, audio, idle sway, payment destination, privacy-conscious tracking, keyboard accessibility and reduced-motion behaviour.
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
 

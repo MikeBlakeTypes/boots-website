@@ -1435,8 +1435,8 @@
       transform: rotate(-2deg);
     }
 
-    .yodel-feature.is-yodelling .yodel-button { animation: yodel-vibrate 0.48s ease-in-out; }
-    .yodel-feature.is-yodelling .yodel-vibration { animation: yodel-marks 0.48s ease-in-out; }
+    .yodel-feature.is-yodelling .yodel-button { animation: yodel-vibrate 0.68s ease-in-out; }
+    .yodel-feature.is-yodelling .yodel-vibration { animation: yodel-marks 0.68s ease-in-out; }
     .yodel-feature.idle-sway .yodel-button { animation: yodel-sway 1.4s ease-in-out; }
 
     @keyframes yodel-vibrate {
@@ -1518,6 +1518,43 @@
     @media (max-width: 600px) and (orientation: portrait) {
       .liquid-yodel-tile {
         padding-bottom: 12px;
+      }
+    }
+
+    /* v2.7.3 — Yodelling Lederhosen further positioning refinements */
+    @media (min-width: 1101px) {
+      .liquid-yodel-tile {
+        padding-bottom: 18px;
+      }
+
+      .yodel-feature {
+        min-height: 390px;
+      }
+    }
+
+    @media (min-width: 681px) and (max-width: 1100px) {
+      .liquid-yodel-tile > .strip-tile,
+      .liquid-yodel-tile > .yodel-feature {
+        position: relative;
+        left: -24px;
+      }
+
+      .liquid-yodel-tile {
+        padding-bottom: 18px;
+      }
+
+      .yodel-feature {
+        min-height: 390px;
+      }
+    }
+
+    @media (max-width: 600px) and (orientation: portrait) {
+      .yodel-feature {
+        min-height: 295px;
+      }
+
+      .liquid-yodel-tile {
+        padding-bottom: 6px;
       }
     }
 
@@ -1967,7 +2004,7 @@
         feature.classList.remove('is-yodelling');
         void feature.offsetWidth;
         feature.classList.add('is-yodelling');
-        window.setTimeout(function () { feature.classList.remove('is-yodelling'); }, 520);
+        window.setTimeout(function () { feature.classList.remove('is-yodelling'); }, 700);
       }
 
       function playYodel() {
