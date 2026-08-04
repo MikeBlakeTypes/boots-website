@@ -1,5 +1,75 @@
 # BOOTS — Live Music Duo Website
 
+## BOOTS Website v2.7.3 — Yodelling Lederhosen Further Positioning Refinements
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Raised the lower gold divider on desktop by reducing excess lower spacing in the combined LISTEN / LOOK / TIP JAR · TRINKGELD / Lederhosen area.
+- Shifted the complete lower Tip Jar and Lederhosen content grouping 24px left in the narrow two-column desktop/tablet layout, without changing the approved trousers size or assets.
+- Extended the click-triggered trousers vibration and vibration-mark animation from 0.48 seconds to 0.68 seconds, with the active state retained for 0.70 seconds.
+- Raised the lower divider on narrow portrait mobile layouts by reducing the Lederhosen panel minimum height and lower padding, approximately halving the gap beneath the yodel caption.
+- Preserved all approved wording, imagery, audio, idle sway, payment destination, privacy-conscious tracking, keyboard accessibility and reduced-motion behaviour.
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Froze the approved v2.7.1-yodel-test.5 Lederhosen and vibration-graphic sizes globally across all viewports.
+- Preserved the approved iPhone trousers position.
+- Moved only the trousers and vibration group 20px left on tablet and desktop layouts so the trousers centreline aligns above the capital “L” in “Lederhosen”, while leaving the desktop caption in its existing position.
+- Removed the curved gold arrow element completely on all devices and removed its reserved caption spacing.
+- Centred “Tap the Lederhosen for a yodel!” on iPhone and equivalent narrow portrait layouts.
+- Preserved the approved production image, Liquid Applause copy, PROST! sign-off, audio, idle sway, vibration animation, keyboard accessibility and reduced-motion behaviour.
+
+## Version 2.7.1-yodel-test.5 — Global Lederhosen Size and Liquid Applause Copy Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Removed breakpoint-dependent Lederhosen sizing and made the 50%-reduced v2.7.1-yodel-test.3 rendered size the global default across desktop, tablet and mobile views.
+- Applied the proportionally reduced vibration-graphic size globally so no media query restores the earlier larger scale.
+- Retained responsive positioning and spacing rules while preventing them from changing the trousers or vibration scale.
+- Updated the Liquid Applause invitation to: “If we've made you smile, you're welcome to buy Boots a beer.”
+- Added a separate centred gold “PROST!” sign-off beneath the invitation with a small gap.
+- Preserved the approved transparent image asset, exact aspect ratio, caption, arrow, animation timing, audio, accessibility, reduced-motion support and Liquid Applause behaviour.
+
+## Version 2.7.1-yodel-test.4 — Narrow-View Lederhosen Size and Position Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Reduced the rendered Yodelling Lederhosen to 50% of its v2.7.1-yodel-test.3 size in the narrow two-column layout only.
+- Reduced the separate vibration graphics proportionally.
+- Moved the complete interactive feature slightly upward and to the left at that breakpoint for better alignment with the LOOK and LIQUID APPLAUSE controls.
+- Kept the approved transparent production PNG, caption size and wording, audio, animation timing, accessibility, reduced-motion support and Liquid Applause behaviour unchanged.
+- Preserved the existing wide-desktop and single-column mobile layouts.
+
+## Version 2.7.1-yodel-test.3 — Yodelling Lederhosen Production Asset Replacement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Replaced the existing Yodelling Lederhosen cut-out with the newly supplied transparent production PNG.
+- Regenerated the web-optimised PNG directly from the new master while preserving its transparency, proportions and appearance.
+- Kept all approved v2.7.1-yodel-test.2 positioning, sizing, spacing, caption, vibration graphics, arrow, animation timing, audio behaviour, accessibility and responsive layout unchanged.
+
+## Version 2.7.1-yodel-test.2 — Yodelling Lederhosen Layout Refinement
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Reduced the displayed Lederhosen cut-out and vibration marks by approximately 30% while preserving the source image's exact aspect ratio.
+- Moved the interactive Lederhosen upward so the top of the cut-out aligns with the top of the Liquid Applause beer mug icon on wide layouts.
+- Removed the internal gold divider so Liquid Applause and the Lederhosen read as one combined panel.
+- Improved responsive sizing and minimum column widths so the Liquid Applause button does not collide with panel dividers on narrower desktop windows.
+- Increased the subtle idle sway frequency from every 15 seconds to every 7.5 seconds.
+- Preserved the caption wording, type treatment, colour and size, and retained all click/tap, audio, vibration, keyboard and reduced-motion behaviour.
+
+## Version 2.7.0-yodel-test.1 — Experimental Yodelling Lederhosen Feature
+
+**Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.
+
+- Added the original-proportion BOOTS Yodelling Lederhosen beside Liquid Applause as an independent tap/click interaction.
+- Added deliberate-user-action audio playback using the supplied processed recording; no autoplay and no overlapping audio.
+- Added a short vibration animation and a subtle idle sway every 15 seconds.
+- Added keyboard access, an accessible control label and `prefers-reduced-motion` support.
+- Kept Liquid Applause behaviour and aggregate click counting unchanged.
+- Added reusable, independently positioned PNG/SVG/audio assets under `assets/yodelling-lederhosen/`.
+
 ## Version 2.6.9 — Release and Side-Project Click Analytics
 
 - Added privacy-conscious aggregate daily click counting for every Stick Season listening-platform link: Spotify, Apple Music, Amazon Music, YouTube Music, YouTube and Deezer.
@@ -61,9 +131,18 @@ All four thumbnails remain first-party local assets under `images/video-thumbnai
 - Changed the explanatory line beneath each release to: “Listen in full on your favourite platforms”.
 - Preserved external-link-only listening, the v2.6.7 privacy architecture, YouTube thumbnail treatment, Liquid Applause click counting, favicon branding and Cloudflare Pages hosting.
 
-## BOOTS Website v2.7.2 — YouTube-handle and Tip Jar update
+## BOOTS Website v2.7.2 — Yodelling Lederhosen production-sync update
 
+- Preserved the existing `feature/yodelling-lederhosen` implementation.
 - Updated the BOOTS YouTube channel link to `https://www.youtube.com/@bootsmusic`.
-- Changed the visible Liquid Applause heading to `TIP JAR · TRINKGELD`.
+- Changed the visible heading to `TIP JAR · TRINKGELD`.
 - Changed the supporting line to `Leave BOOTS a little Liquid Applause.`
-- Preserved the existing Stripe destination, aggregate click-counting route, layout, privacy behaviour and all unrelated content.
+- Preserved the existing Stripe destination, aggregate click-counting route, yodel audio, animation, interaction, accessibility behaviour and responsive layout.
+
+## BOOTS Website v2.7.2 — Yodelling Lederhosen Final Positioning Refinement
+
+- Reduced the empty space beneath the Lederhosen caption so the gold divider sits higher.
+- Applied a modest spacing reduction on desktop and tablet.
+- Applied a stronger spacing reduction on mobile portrait.
+- On desktop only, moved the caption slightly left without moving or resizing the Lederhosen.
+- Preserved the approved trousers size, position, animation, audio, interaction, accessibility behaviour, Tip Jar wording, YouTube handle, Stripe route, click counter, site content and privacy behaviour.
