@@ -1,5 +1,14 @@
 # BOOTS — Live Music Duo Website
 
+## BOOTS Website v2.7.4 — Restore LOOK / TIP JAR Divider
+
+- Restored the missing thin vertical gold divider between the LOOK panel and the combined TIP JAR · TRINKGELD / Yodelling Lederhosen panel in the wide multi-column layout.
+- Matched the existing LISTEN / LOOK divider in colour, thickness, opacity, height and alignment.
+- Kept the divider out of wrapped and stacked tablet/mobile layouts.
+- Preserved all approved Yodelling Lederhosen sizing, positioning, audio, animation, accessibility, Tip Jar behaviour, tracking, wording and responsive layout.
+- Made no unrelated production changes.
+
+
 ## BOOTS Website v2.7.3 — Yodelling Lederhosen Further Positioning Refinements
 
 **Feature branch only:** `feature/yodelling-lederhosen`. Do not deploy or merge into `main` until Mike and Jason approve the preview.

@@ -1558,6 +1558,25 @@
       }
     }
 
+    /* v2.7.4 — restore the missing LOOK / TIP JAR divider in the wide multi-column layout. */
+    @media (min-width: 1101px) {
+      .liquid-yodel-tile {
+        position: relative;
+      }
+
+      .liquid-yodel-tile::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        background: var(--gold-40);
+        pointer-events: none;
+      }
+    }
+
   </style>
 </head>
 
