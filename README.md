@@ -1,5 +1,12 @@
 # BOOTS — Live Music Duo Website
 
+## BOOTS Website v2.7.5.1 — Thank-You Wording Refinement
+
+- Changed “Thank you for the Liquid Applause!” to “Thanks for the Liquid Applause!”.
+- Changed “Tap for your thank-you yodel!” to “Tap the Lederhosen for your thank-you yodel!”.
+- Preserved the approved `/thank-you/` layout, styling, Lederhosen image, vibration animation, yodel audio, accessibility, reduced-motion behaviour, `BACK TO BOOTS` button and responsive implementation.
+- No other website pages, Stripe routes, tracking, assets or production behaviour were changed.
+
 ## BOOTS Website v2.7.5 — Liquid Applause Thank-You Experience
 
 - Added a new BOOTS-branded page at `/thank-you/`.
