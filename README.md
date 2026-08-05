@@ -1,5 +1,16 @@
 # BOOTS — Live Music Duo Website
 
+## BOOTS Website v2.7.5 — Liquid Applause Thank-You Experience
+
+- Added a new BOOTS-branded page at `/thank-you/`.
+- Added the approved message: “Thank you for the Liquid Applause!”, “You’ve made Mike and Jason smile.” and the gold “PROST!” sign-off.
+- Reused the approved Yodelling Lederhosen image, vibration graphics and authentic yodel recording without changing any production assets.
+- Added a deliberate, keyboard-accessible “Tap for your thank-you yodel!” interaction with no autoplay and no overlapping audio.
+- Added a BOOTS-styled `BACK TO BOOTS` button and retained the privacy-page route.
+- Preserved the existing homepage, Tip Jar link, Stripe route, privacy-conscious tracking, responsive behaviour and accessibility implementation unchanged.
+- Added `STRIPE-THANK-YOU-INTEGRATION-NOTES.md` for the separate post-deployment Stripe redirect stage.
+
+
 ## BOOTS Website v2.7.4 — Restore LOOK / TIP JAR Divider
 
 - Restored the missing thin vertical gold divider between the LOOK panel and the combined TIP JAR · TRINKGELD / Yodelling Lederhosen panel in the wide multi-column layout.
